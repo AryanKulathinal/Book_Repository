@@ -10,6 +10,7 @@ phases:
       # Replace with this to your repository URI
       - REPOSITORY_URI=203918849537.dkr.ecr.us-east-1.amazonaws.com/spring-demo-ecr
       - IMAGE_TAG=build-$(echo $CODEBUILD_BUILD_ID | awk -F":" '{print $2}')
+
   build:
     commands:
       - echo Build started on `date`
